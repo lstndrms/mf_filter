@@ -1,6 +1,8 @@
 #===============================================================================================================
+
+
 # NeverSink's Indepth Loot Filter - for Path of Exile
-#===============================================================================================================
+#===============================================================================================================asdas
 # VERSION:  0.1.1
 # AUTHOR:   NeverSink
 #
@@ -136,7 +138,7 @@ SetFontSize 34
 # Currency Tier B: Vaal, Chaos, Exalt, Exotic
 Show
 Class "Currency"
-BaseType "Vaal Orb" "Orb of Annulment" "Gemcutter's Prism" "Lesser Jeweller's Orb" "Exotic" "Regal Orb" "Artificer's Orb" "Orb of Alchemy" "Orb of Chance" "Exalted Orb"
+BaseType "Vaal Orb" "Orb of Annulment" "Gemcutter's Prism" "Exotic" "Regal Orb" "Artificer's Orb" "Orb of Alchemy" "Orb of Chance" "Exalted Orb"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 101 63 138
@@ -146,7 +148,7 @@ SetFontSize 34
 
 Hide
 Class "Currency"
-BaseType "Distilled" "Catalyst" "Essence of" "Omen of" "Glassblower's Bauble"
+BaseType "Distilled" "Catalyst" "Essence of" "Omen of" "Glassblower's Bauble"  "Lesser Jeweller's Orb"
 
 # Currency Tier C: Vaal, Chaos, Exalt, Exotic
 Hide
@@ -326,7 +328,7 @@ SetFontSize 340
 
 Hide
 Rarity Unique
-BaseType "Face Mask" "Lunar Amulet" "Jewelled Gloves" "Crimson Amulet" "Serpentscale Coat" "Chain Tiara" "Rawhide Belt" "Horned Crown" "Lapis Amulet" "Mail Vestments" "Lace Hood" "Hexer's Robe" "Marabout Garb" "Rope Cuffs" "Spired Greathelm" "Suede Bracers" "Plate Belt" "Steel Plate" "Tempered Mitts" "Tattered Robe" "Hooded Mask" "Sectioned Bracers" "Waxed Jacket" "Rogue Armour" "Warrior Greathelm" "Jingling Crest Shield" "Iron Cuirass" "Linen Belt" "Vagabond Armour" "Gilded Vestments" "Linen Wraps" "Iron Ring" "Aged Cuffs" "Iron Crown" "Sombre Gloves" "Spined Bracers" "Torn Gloves" "Gauze Wraps" "Elite Greathelm" "Goldcast Cuffs" "Covert Hood" "Rhoahide Coat" "Bone Raiment" "Maraketh Cuirass" "Gold Circlet" "Wayfarer Jacke" "Brimmed Helm" "Wicker Tiara" "Shaman Mantle" "Layered Gauntlets" "Stitched Gloves" "Firm Bracers" "Martyr Crown" "Hunter Hood" "Rusted Greathelm" "Guarded Helm" "Veiled Mask" "Vaal Cuirass" "Pathfinder Coat" "Scout's Vest" "Wide Belt"  "Votive Raiment" "Cowled Helm" "Shielded Helm" "Soldier Greathelm" "Studded Vest" "Twig Circlet" "Intricate Gloves" "Chain Mail" "Solid Mask" "Cloaked Mail" "Champion Cuirass" "Full Plate" "Riveted Mitts" "Keth Raiment" "Visored Helm" "Raider Plate" "Cultist Crown" "Hewn Mask" "Shabby Hood" "Feathered Robe" "Feathered Robe" "Anchorite Garb" "Pilgrim Vestments" "Hermit Garb" "Ringmail Gauntlets" "Scale Mail" "Beaded Circlet" "Mail Belt" "Doubled Gauntlets" "Rusted Cuirass" "Fur Plate" "Amber Amulet" "Quilted Vest" "Leather Vest" "Ruby Ring" "Silk Robe" "Feathered Tiara" "Explorer Armour"
+BaseType "Face Mask" "Lunar Amulet" "Fine Belt" "Long Belt" "Jewelled Gloves" "Crimson Amulet" "Serpentscale Coat" "Chain Tiara" "Rawhide Belt" "Horned Crown" "Lapis Amulet" "Mail Vestments" "Lace Hood" "Hexer's Robe" "Marabout Garb" "Rope Cuffs" "Spired Greathelm" "Suede Bracers" "Plate Belt" "Steel Plate" "Tempered Mitts" "Tattered Robe" "Hooded Mask" "Sectioned Bracers" "Waxed Jacket" "Rogue Armour" "Warrior Greathelm" "Jingling Crest Shield" "Iron Cuirass" "Linen Belt" "Vagabond Armour" "Gilded Vestments" "Linen Wraps" "Iron Ring" "Aged Cuffs" "Iron Crown" "Sombre Gloves" "Spined Bracers" "Torn Gloves" "Gauze Wraps" "Elite Greathelm" "Goldcast Cuffs" "Covert Hood" "Rhoahide Coat" "Bone Raiment" "Maraketh Cuirass" "Gold Circlet" "Wayfarer Jacke" "Brimmed Helm" "Wicker Tiara" "Shaman Mantle" "Layered Gauntlets" "Stitched Gloves" "Firm Bracers" "Martyr Crown" "Hunter Hood" "Rusted Greathelm" "Guarded Helm" "Veiled Mask" "Vaal Cuirass" "Pathfinder Coat" "Scout's Vest" "Wide Belt"  "Votive Raiment" "Cowled Helm" "Shielded Helm" "Soldier Greathelm" "Studded Vest" "Twig Circlet" "Intricate Gloves" "Chain Mail" "Solid Mask" "Cloaked Mail" "Champion Cuirass" "Full Plate" "Riveted Mitts" "Keth Raiment" "Visored Helm" "Raider Plate" "Cultist Crown" "Hewn Mask" "Shabby Hood" "Feathered Robe" "Feathered Robe" "Anchorite Garb" "Pilgrim Vestments" "Hermit Garb" "Ringmail Gauntlets" "Scale Mail" "Beaded Circlet" "Mail Belt" "Doubled Gauntlets" "Rusted Cuirass" "Fur Plate" "Amber Amulet" "Quilted Vest" "Leather Vest" "Ruby Ring" "Silk Robe" "Feathered Tiara" "Explorer Armour"
 
 Hide
 Rarity Unique
