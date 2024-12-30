@@ -258,12 +258,23 @@ SetFontSize 340
 
 Hide
 Rarity Unique
-BaseType "Face Mask" "Lunar Amulet" "Fine Belt" "Long Belt" "Pearl Ring" "Jade Amulet" "Burnished Gauntlets" "Fine Bracers" "Moulded Mitts" "Felt Cap" "Jewelled Gloves" "Ironclad Vestments" "Crimson Amulet" "Serpentscale Coat" "Chain Tiara" "Rawhide Belt" "Horned Crown" "Lapis Amulet" "Mail Vestments" "Lace Hood" "Hexer's Robe" "Marabout Garb" "Rope Cuffs" "Spired Greathelm" "Suede Bracers" "Plate Belt" "Steel Plate" "Tempered Mitts" "Tattered Robe" "Hooded Mask" "Sectioned Bracers" "Waxed Jacket" "Rogue Armour" "Warrior Greathelm" "Jingling Crest Shield" "Iron Cuirass" "Linen Belt" "Vagabond Armour" "Gilded Vestments" "Linen Wraps" "Iron Ring" "Aged Cuffs" "Iron Crown" "Sombre Gloves" "Spined Bracers" "Torn Gloves" "Gauze Wraps" "Elite Greathelm" "Goldcast Cuffs" "Covert Hood" "Rhoahide Coat" "Bone Raiment" "Maraketh Cuirass" "Gold Circlet" "Wayfarer Jacke" "Brimmed Helm" "Wicker Tiara" "Shaman Mantle" "Layered Gauntlets" "Stitched Gloves" "Firm Bracers" "Martyr Crown" "Hunter Hood" "Rusted Greathelm" "Guarded Helm" "Veiled Mask" "Vaal Cuirass" "Pathfinder Coat" "Scout's Vest" "Wide Belt"  "Votive Raiment" "Cowled Helm" "Shielded Helm" "Soldier Greathelm" "Studded Vest" "Twig Circlet" "Intricate Gloves" "Chain Mail" "Solid Mask" "Cloaked Mail" "Champion Cuirass" "Full Plate" "Riveted Mitts" "Keth Raiment" "Visored Helm" "Raider Plate" "Cultist Crown" "Hewn Mask" "Shabby Hood" "Feathered Robe" "Feathered Robe" "Anchorite Garb" "Pilgrim Vestments" "Hermit Garb" "Ringmail Gauntlets" "Scale Mail" "Beaded Circlet" "Mail Belt" "Doubled Gauntlets" "Rusted Cuirass" "Fur Plate" "Amber Amulet" "Quilted Vest" "Leather Vest" "Ruby Ring" "Silk Robe" "Feathered Tiara" "Explorer Armour"
+BaseType "Face Mask" "Lunar Amulet" "Wrapped Greathelm" "Bloodstone Amulet" "Fine Belt" "Long Belt" "Pearl Ring" "Jade Amulet" "Burnished Gauntlets" "Fine Bracers" "Moulded Mitts" "Felt Cap" "Jewelled Gloves" "Ironclad Vestments" "Crimson Amulet" "Serpentscale Coat" "Chain Tiara" "Rawhide Belt" "Horned Crown" "Lapis Amulet" "Mail Vestments" "Lace Hood" "Hexer's Robe" "Marabout Garb" "Rope Cuffs" "Spired Greathelm" "Suede Bracers" "Plate Belt" "Steel Plate" "Tempered Mitts" "Tattered Robe" "Hooded Mask" "Sectioned Bracers" "Waxed Jacket" "Rogue Armour" "Warrior Greathelm" "Jingling Crest Shield" "Iron Cuirass" "Linen Belt" "Vagabond Armour" "Gilded Vestments" "Linen Wraps" "Iron Ring" "Aged Cuffs" "Iron Crown" "Sombre Gloves" "Spined Bracers" "Torn Gloves" "Gauze Wraps" "Elite Greathelm" "Goldcast Cuffs" "Covert Hood" "Rhoahide Coat" "Bone Raiment" "Maraketh Cuirass" "Gold Circlet" "Wayfarer Jacke" "Brimmed Helm" "Wicker Tiara" "Shaman Mantle" "Layered Gauntlets" "Stitched Gloves" "Firm Bracers" "Martyr Crown" "Hunter Hood" "Rusted Greathelm" "Guarded Helm" "Veiled Mask" "Vaal Cuirass" "Pathfinder Coat" "Scout's Vest" "Wide Belt"  "Votive Raiment" "Cowled Helm" "Shielded Helm" "Soldier Greathelm" "Studded Vest" "Twig Circlet" "Intricate Gloves" "Chain Mail" "Solid Mask" "Cloaked Mail" "Champion Cuirass" "Full Plate" "Riveted Mitts" "Keth Raiment" "Visored Helm" "Raider Plate" "Cultist Crown" "Hewn Mask" "Shabby Hood" "Feathered Robe" "Feathered Robe" "Anchorite Garb" "Pilgrim Vestments" "Hermit Garb" "Ringmail Gauntlets" "Scale Mail" "Beaded Circlet" "Mail Belt" "Doubled Gauntlets" "Rusted Cuirass" "Fur Plate" "Amber Amulet" "Quilted Vest" "Leather Vest" "Ruby Ring" "Silk Robe" "Feathered Tiara" "Explorer Armour"
 
 Hide
 Rarity Unique
 Class "Quiver" "Flask" "Stave" "Sword" "Axe" "Focus" "Mace" "Shield" "Wand" "Dagger" "Boots" "Crossbow" "Sceptre" "Bow"
 SetFontSize 40
+
+#Show
+#Rarity Unique
+#BaseType "Ring"
+#SetFontSize 40
+#SetTextColor 52 235 219
+#SetBackgroundColor 255 0 0
+#SetBorderColor 255 0 0
+#CustomAlertSound "za-warudo-stop-time-sound.mp3" 300
+#PlayEffect Red
+#MinimapIcon 1 Pink Diamond
 
 Show
 Rarity Unique
