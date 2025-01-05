@@ -1,0 +1,372 @@
+#===============================================================================================================
+# NeverSink's Indepth Loot Filter - for Path of Exile
+#===============================================================================================================
+# VERSION:  0.1.1
+# AUTHOR:   NeverSink
+#
+# This is a mini-filter designed for early PoE2 EA gameplay. I will eventually replace it with a full-fledged filter
+# With FilterBlade.xyz support. This filter focuses more on highlighting loot, rather than hiding
+#
+# TWITTER: @NeverSinkDev
+# DISCORD: https://discord.gg/mye6xhF
+# TWITCH:  https://www.twitch.tv/neversink
+# PATREON: https://www.patreon.com/Neversink
+
+#--------------------------
+# Overrides - Uniques, Valuables
+#--------------------------
+
+
+## Divine Orb Style
+Show
+Class "Currency"
+BaseType "Mirror" "Divine" "Perfect Jeweller's Orb"
+SetFontSize 45
+SetTextColor 255 0 0 255
+SetBorderColor 255 0 0 255
+SetBackgroundColor 255 255 255 255
+PlayAlertSound 6 300
+PlayEffect Red
+MinimapIcon 0 Red Star
+
+#--------------------------
+# Gold
+#--------------------------
+
+Hide
+StackSize >= 500
+BaseType == "Gold"
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+PlayEffect Orange Temp
+
+Hide
+BaseType == "Gold"
+SetTextColor 180 180 180
+SetBorderColor 0 0 0 255
+SetBackgroundColor 0 0 0 180
+
+#--------------------------
+# Uncut Gems
+#--------------------------
+
+Hide
+BaseType "Uncut Skill Gem" "Uncut Spirit Gem"
+	ItemLevel >= 19
+SetFontSize 28
+
+Hide
+BaseType "Uncut "
+SetTextColor 20 240 240
+SetBorderColor 20 240 240
+PlayAlertSound 2 300
+PlayEffect Cyan
+SetFontSize 28
+
+#--------------------------
+# Socketables and Special Character Equipment
+#--------------------------
+
+# Special A Tier - League specific socketables and jewels
+Hide
+BaseType "Soul Core" "Timeless"
+SetTextColor 0 240 190
+SetBorderColor 0 240 190
+SetFontSize 33
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+
+# Special A Tier - Sanctum Relics
+Hide 
+Class "Relic"
+SetTextColor 0 240 190
+SetBorderColor 0 240 190
+SetFontSize 33
+MinimapIcon 2 Cyan Triangle
+PlayEffect Cyan
+
+# Special A Tier - Rare Jewels
+Hide
+Class "Jewel"
+Rarity Rare
+SetTextColor 0 240 190
+SetBorderColor 0 240 190
+SetFontSize 33
+
+
+# Special B Tier - Any Jewels
+Hide
+Class "Jewel"
+Rarity Magic
+
+
+# Special B Tier - Any Runes and Charms
+Hide 
+BaseType " Rune" " Charm" "Orb of Transmutation"
+SetTextColor 0 240 190
+PlayEffect Cyan Temp
+
+#--------------------------
+# Socketables and Special Character Equipment
+#--------------------------
+
+# Currency Tier A: Gemcutter, Annullment
+Show
+Class "Currency"
+BaseType "Gemcutter's Prism" "Orb of Chance"
+SetTextColor 255 255 255 255
+SetBorderColor 255 255 255 255
+SetBackgroundColor 101 63 138
+PlayAlertSound 1 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 34
+
+# Currency Tier B: Vaal, Chaos, Exalt, Exotic
+Show
+Class "Currency"
+BaseType "Greater Jeweller's Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance" "Chance Shard"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 101 63 138
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Circle
+SetFontSize 34
+
+Hide
+Class "Currency"
+BaseType "Distilled" "Catalyst" "Essence of" "Omen of" "Lesser Jeweller's Orb" "Exotic" "Regal Orb" "Vaal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Orb of Alchemy" "Artificer's Orb"  "Orb of Annulment"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 101 63 138
+PlayAlertSound 2 300
+PlayEffect White
+
+
+# Currency Tier C: Vaal, Chaos, Exalt, Exotic
+Hide
+Class "Currency"
+BaseType "Arcanist's Etcher" "Blacksmith's Whetstone" "Regal Shard" " Artifact"
+SetTextColor 255 207 132
+SetBorderColor 101 63 138
+SetBackgroundColor 101 63 138
+
+
+Show
+Class "Currency"
+BaseType "Simulacrum Splinter" "Breach Splinter" 
+SetTextColor 255 207 132
+SetBorderColor 101 63 138
+SetBackgroundColor 101 63 138
+MinimapIcon 2 Grey Circle
+SetFontSize 32
+
+Hide
+Class "Currency"
+BaseType "Wisdom" "Shard" "Orb of Augmentation"
+
+# Unknown currency
+Show
+Class "Currency"
+SetTextColor 255 207 132
+SetBorderColor 255 207 132
+SetBackgroundColor 101 63 138
+PlayAlertSound 2 300
+PlayEffect Pink
+MinimapIcon 1 White Circle
+SetFontSize 34
+
+# Fragments
+Hide
+BaseType "Simulacrum" " Tablet" "Breachstone" "Barya" "Ultimatum" " Fragment" "Cowardly Fate" "Deadly Fate" "Victorious Fate" "Expedition Logbook"
+SetTextColor 255 207 255
+SetBorderColor 255 207 255
+SetBackgroundColor 65 20 80
+PlayAlertSound 2 300
+PlayEffect White
+MinimapIcon 1 White Square
+SetFontSize 34
+
+Hide 
+BaseType "Waystone"
+WaystoneTier <= 12
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+PlayAlertSound 4 300
+
+Hide
+BaseType "Waystone"
+WaystoneTier >= 13
+SetTextColor 255 255 255
+SetBorderColor 255 255 255
+PlayAlertSound 4 300
+
+
+#--------------------------
+# Value Rares
+#--------------------------
+
+Hide
+Class "Rings" "Amulets" "Bow" 
+Rarity Rare
+SetFontSize 29
+SetTextColor 52 235 219
+SetBorderColor 233 206 75
+PlayEffect Yellow
+MinimapIcon 1 Yellow Diamond
+
+Hide
+BaseType "Heavy Belt"
+Rarity Unique
+SetFontSize 40
+SetTextColor 52 235 219
+SetBackgroundColor 255 0 0
+SetBorderColor 255 0 0
+PlayEffect Red
+MinimapIcon 1 Pink Diamond
+
+Hide
+BaseType "Smuggler Coat" "Ornate Belt" "Armoured Cap"
+Rarity Unique
+SetFontSize 35
+SetTextColor 52 235 219
+SetBackgroundColor 255 102 102
+SetBorderColor 204 153 0
+PlayEffect Red
+MinimapIcon 1 Pink Diamond
+
+
+#--------------------------
+# Rings, Amulets, Belts
+#--------------------------
+
+Hide
+Rarity Magic
+Class "Bow"
+SetFontSize 24
+SetTextColor 0 102 205
+SetBorderColor 102 204 255
+
+Hide
+Rarity Unique
+BaseType "Stone Tower Shield"
+SetTextColor 175 96 37 255
+SetBorderColor 175 96 37 255
+SetBackgroundColor 53 13 13 255
+PlayAlertSound 3 300
+PlayEffect Brown
+MinimapIcon 2 Brown Star
+SetFontSize 26
+
+Hide
+Rarity Rare
+Class "Quiver" "Flask" "Stave" "Sword" "Axe" "Focus" "Mace" "Wand" "Dagger" "Sceptre" "Armour" "Gloves" "Shield" "Belts" "Helm" "Crossbow" "Boots"
+SetFontSize 25
+
+Hide
+Rarity Normal
+Class "Rings" "Amulets" "Belts" "Sceptre" "Helm" "Armour" "Crossbow" "Wand" "Dagger" "Boots" "Gloves" "Bow" "Quiver" "Flask" "Stave" "Sword" "Axe" "Focus" "Mace" "Shield"
+SetFontSize 40
+
+Hide
+Rarity Unique
+Class "Bow" "Quiver" "Flask" "Stave" "Sword" "Axe" "Focus" "Mace" "Shield" "Wand" "Dagger" "Boots" "Crossbow" "Sceptre"
+SetFontSize 40
+
+Hide
+Rarity Unique
+BaseType "Lazuli Ring" "Spired Greathelm" "Suede Bracers" "Plate Belt" "Steel Plate" "Tempered Mitts" "Tattered Robe" "Hooded Mask" "Sectioned Bracers" "Waxed Jacket" "Rogue Armour" "Warrior Greathelm" "Jingling Crest Shield" "Iron Cuirass" "Linen Belt" "Vagabond Armour" "Gilded Vestments" "Wrapped Greathelm" "Linen Wraps" "Iron Ring" "Aged Cuffs" "Iron Crown" "Sombre Gloves" "Spined Bracers" "Torn Gloves" "Gauze Wraps" "Elite Greathelm" "Goldcast Cuffs" "Covert Hood" "Rhoahide Coat" "Bone Raiment" "Maraketh Cuirass" "Gold Circlet" "Wayfarer Jacke" "Brimmed Helm" "Wicker Tiara" "Shaman Mantle" "Layered Gauntlets" "Stitched Gloves" "Firm Bracers" "Martyr Crown" "Hunter Hood" "Rusted Greathelm" "Guarded Helm" "Veiled Mask" "Wide Belt"  "Votive Raiment" "Cowled Helm" "Shielded Helm" "Soldier Greathelm" "Studded Vest" "Twig Circlet" "Intricate Gloves" "Chain Mail" "Solid Mask" "Cloaked Mail" "Champion Cuirass" "Full Plate" "Riveted Mitts" "Keth Raiment" "Visored Helm" "Raider Plate" "Cultist Crown" "Hewn Mask" "Shabby Hood" "Feathered Robe" "Feathered Robe" "Anchorite Garb" "Pilgrim Vestments" "Hermit Garb" "Ringmail Gauntlets" "Scale Mail" "Beaded Circlet" "Mail Belt"
+SetFontSize 40
+
+Hide
+Rarity Unique
+BaseType "Stellar Amulet" "Solar Amulet" "Azure Amulet" "Amethyst Ring" "Sapphire Ring" "Emerald Ring" "Gold Amulet" "Ring"
+SetTextColor 255 255 102
+SetBorderColor 204 153 0
+SetBackgroundColor 53 13 13 255
+PlayAlertSound 3 300
+PlayEffect Brown
+MinimapIcon 2 Brown Star
+SetFontSize 33
+
+Hide
+Rarity Unique
+SetTextColor 175 96 37 255
+SetBorderColor 175 96 37 255
+SetBackgroundColor 53 13 13 255
+PlayAlertSound 3 300
+PlayEffect Brown
+MinimapIcon 2 Brown Star
+SetFontSize 24
+
+
+
+Hide
+Class "Rings" "Amulets" "Belts" "Sceptre" "Helm" "Armour" "Crossbow" "Wand" "Dagger" "Boots" "Gloves" "Bow" "Quiver" "Flask" "Stave" "Sword" "Axe" "Focus" "Mace" "Shield"
+Rarity Magic
+SetFontSize 40
+
+
+#--------------------------
+# Salvagable Items
+#--------------------------
+
+# Not working!
+Show
+Sockets > 0
+Rarity Normal
+SetBorderColor 200 200 200
+SetFontSize 35
+
+Show
+Quality > 10
+Rarity Normal
+SetBorderColor 200 200 200
+SetFontSize 35
+
+# Not working!
+Show
+Sockets > 0
+Rarity Magic
+SetBorderColor 0 0 200
+SetFontSize 35
+
+Show
+Quality > 10
+Rarity Magic
+SetBorderColor 0 0 200
+SetFontSize 35
+
+#--------------------------
+# OPTIONAL RULES
+#--------------------------
+# TO ENABLE RULES, REMOVE THE # AT THE START OF THE LINE
+
+### OPTIONAL RULE: Hide random bases
+# REMOVE THE BASES YOU --DO-- WANT TO SEE BEFORE SETTING TO HIDE
+
+# Hide
+# Rarity <= Magic
+# Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre"
+# AreaLevel >= 65
+
+### OPTIONAL RULE: REDUCES BACKGROUND ON LOW LEVEL BASES
+
+# Show
+# Rarity <= Magic
+# Class "Flask" "Body" "Helmet" "Boots" "Gloves" "Shields" "Quiver" "Mace" "Staff" "Quarter" "Bow" "Crossbow" "Wand" "Sceptre"
+# AreaLevel >= 65
+# DropLevel <= 50
+# SetBackgroundColor 0 0 0 125
+
+#--------------------------
+# Meta
+#--------------------------
+
+# If this thing crashes, time to update your filter!
+# This is here to prevent people to use this filter for AGES. Expert items will get removed eventually
+# Get a new filter from www.filterblade.xyz
+
+Show
+BaseType == "Expert Laced Boots"
