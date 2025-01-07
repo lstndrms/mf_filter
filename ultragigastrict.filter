@@ -39,8 +39,8 @@ SetFontSize 45
 SetTextColor 255 0 0 255
 SetBorderColor 255 0 0 255
 SetBackgroundColor 255 255 255 255
-#PlayAlertSound 6 300
-CustomAlertSound "vlad.mp3" 300
+PlayAlertSound 6 300
+## "vlad.mp3" 300
 PlayEffect Red
 MinimapIcon 0 Red Star
 
@@ -120,7 +120,7 @@ BaseType "Chaos Orb" "Greater Jeweller's Orb"
 SetTextColor 255 255 255 255
 SetBorderColor 255 255 255 255
 SetBackgroundColor 101 63 138
-CustomAlertSound "gawr-gura-a.mp3" 300
+# "gawr-gura-a.mp3" 300
 PlayEffect White
 MinimapIcon 1 White Circle
 SetFontSize 34
@@ -272,7 +272,7 @@ SetFontSize 40
 SetTextColor 52 235 219
 SetBackgroundColor 255 0 0
 SetBorderColor 255 0 0
-CustomAlertSound "za-warudo-stop-time-sound.mp3" 300
+# "za-warudo-stop-time-sound.mp3" 300
 PlayEffect Red
 MinimapIcon 1 Pink Diamond
 
