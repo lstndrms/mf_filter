@@ -124,8 +124,8 @@ SetFontSize 34
 
 # Currency Tier B: Vaal, Chaos, Exalt, Exotic
 Show
-Class "Currency"
-BaseType "Greater Jeweller's Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance" "Chance Shard"
+Class "Currency" 
+BaseType "Greater Jeweller's Orb" "Chaos Orb" "Exalted Orb" "Orb of Chance" "Chance Shard" "Armourer's Scrap" "Orb of Annulment"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 101 63 138
@@ -136,7 +136,7 @@ SetFontSize 34
 
 Hide
 Class "Currency"
-BaseType "Distilled" "Catalyst" "Essence of" "Omen of" "Lesser Jeweller's Orb" "Exotic" "Regal Orb" "Vaal Orb" "Glassblower's Bauble" "Armourer's Scrap" "Orb of Alchemy" "Artificer's Orb"  "Orb of Annulment"
+BaseType "Distilled" "Catalyst" "Essence of" "Omen of" "Lesser Jeweller's Orb" "Exotic" "Regal Orb" "Vaal Orb" "Glassblower's Bauble" "Orb of Alchemy" "Artificer's Orb"
 SetTextColor 255 207 132
 SetBorderColor 255 207 132
 SetBackgroundColor 101 63 138
@@ -155,7 +155,17 @@ SetBackgroundColor 101 63 138
 
 Show
 Class "Currency"
-BaseType "Simulacrum Splinter" "Breach Splinter" 
+BaseType "Simulacrum Splinter"
+SetTextColor 255 207 132
+SetBorderColor 101 63 138
+SetBackgroundColor 101 63 138
+MinimapIcon 2 Grey Circle
+SetFontSize 32
+
+Show
+StackSize >= 5
+Class "Currency"
+BaseType "Breach Splinter"
 SetTextColor 255 207 132
 SetBorderColor 101 63 138
 SetBackgroundColor 101 63 138
@@ -164,7 +174,7 @@ SetFontSize 32
 
 Hide
 Class "Currency"
-BaseType "Wisdom" "Shard" "Orb of Augmentation"
+BaseType "Wisdom" "Shard" "Orb of Augmentation" "Breach Splinter"
 
 # Unknown currency
 Show
